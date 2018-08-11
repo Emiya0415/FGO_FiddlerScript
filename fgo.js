@@ -55,27 +55,27 @@ static function OnBeforeResponse(oSession: Session) {
 			}
 
 			// 助战改为盖提亚
-			if(true){
+			if(false){
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['svtId']='9935510';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['lv']='100';
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['hp']=1500000;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['atk']=50000;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId1']=960510;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId2']=960511;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId3']=0;
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['hp']='1500000';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['atk']='50000';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId1']='960510';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId2']='960511';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillId3']='0';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillLv1']='1';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillLv2']='1';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['skillLv3']='1';
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['treasureDeviceId']=9935511;
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['treasureDeviceId']='9935511';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['treasureDeviceLv']='1';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['individuality'][0]='5000';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['individuality'][1]='113';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['individuality'][2]='204';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['individuality'][3]='2113';
 				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['limitCount']='0';
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['dispLimitCount']=0;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['commandCardLimitCount']=0;
-				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['iconLimitCount']=0;
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['dispLimitCount']='0';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['commandCardLimitCount']='0';
+				json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt'][0]['iconLimitCount']='0';
 			}
 
 			var newJsonStr = Fiddler.WebFormats.JSON.JsonEncode(json.JSONObject);
