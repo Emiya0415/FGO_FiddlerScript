@@ -10,8 +10,8 @@ static function OnBeforeResponse(oSession: Session) {
 			var jsonStr: String = System.Text.Encoding.ASCII.GetString(System.Convert.FromBase64String(responseStr));
 			var json = Fiddler.WebFormats.JSON.JsonDecode(jsonStr);
 		
-			// 删除sign
-			delete json.JSONObject['sign'];
+			// 需要我的xp模块来过这个sign验证
+			json.JSONObject['sign']="";
 			
 			// 获取 己方英灵数+礼装数+敌方数量
 			var Num=getArrayLength(json.JSONObject['cache']['replaced']['battle'][0]['battleInfo']['userSvt']);
